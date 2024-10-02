@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 10px;
+    color: white;
+}
+
+.body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+}
+
+nav {
+    background-color: #0073e6;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+nav ul li a:hover {
+    background-color: #005bb5;
+    border-radius: 4px;
+}
+
+.welcome {
+    position: relative;
+}
+
+.welcome-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    justify-content: space-between;
+    background-color: #FF9900;
+    padding: 20px;
+}
+
+.kartunBocah img {
+    height: 150px;
+    margin-top: 15px;
+    margin-left: auto;
+    display: block;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.service-item {
+    width: 34%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .services {
+        flex-direction: column;
+    }
+
+    .service-item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .welcome {
+        flex-direction: column;
+    }
+
+    .kartunBocah img {
+        height: 100px;
+    }
+
+    .welcome-text {
+        font-size: 18px;
+    }
+}
